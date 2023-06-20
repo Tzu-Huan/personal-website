@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="css/external.css">
+    <script src = "js/nameinfo.js" defer></script>
+</head>
+<body>
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="experiences.html">Experiences</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+
+    <div class="text-contact">
+        <h1>Contact Me</h1>
+    </div>
+
+    <div class="form-container">
+        <form id="myForm" action="https://formsubmit.co/yu880115@gmail.com" method="POST" >
+            
+                
+                <label for="firstName">First name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="minimum of two characters">
+                <span id="firstNameError" class="error-message"></span>
+            
+                <label for="lastName">Last name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="minimum of two characters">
+                <span id="lastNameError" class="error-message"></span>
+            
+                <label for="email">Your email:</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com">
+                <span id="emailError" class="error-message"></span>
+
+                <label for="text">Message:</label>
+                <input type="text" id="text" name="text" placeholder="not required">
+                <span id="textError" class="error-message"></span>
+            
+
+                <input type="submit" value="Submit">
+          </form>
+        </div>
+
+        <div class="text-contact">
+           <!--  <h2>My Information</h2>-->
+            <h3>Mobile: 857-272-6425</h3>
+            <h3>Email: yu880115@gmail.com</h3>
+            <h3>Location: Boston, MA</h3>
+          <!--  <img src="images/contact_picture.png" alt="contact picture" height="60" width="240">-->
+        </div>
+    
+    
+
+
+</body>
+</html>

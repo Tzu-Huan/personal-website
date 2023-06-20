@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>EPSL Experience</title>
+    <link rel="stylesheet" href="css/external.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+    <script src="js/epsl-top-vue.js" defer></script>
+</head>
+<body>
+  <nav class="navigation">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="experiences.html">Experiences</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        
+    </ul>
+</nav>
+
+<header id="epsl-header">
+  <img src="images/ncu_logo.png" alt="ncu-logo" height="40" width="40"> 
+  <h1>EPSL - Research Assistant</h1>
+  <h3>Earthquake Physics and Seismotectonics Research Group</h3>
+</header>
+
+<div id="epsllist">
+  <article id="epsl-description">
+    <ul>
+        <li v-for="work in works">
+          {{work}}
+        </li>
+    </ul>
+  </article>  
+</div>
+  
+  <h2 id="epsl-pdf-topic">2021 Annual Conference of Geological Society Located in Taipei & Chinese Taipei Geophysical Society</h2>
+    
+  
+  <div class="epsl-pdf-container" >
+    <iframe src="assets/EPSL_work.pdf">
+    </iframe>
+  </div>
+
+  <div id="app">
+    <button class="epsltop" v-on:click="scrollToTop">Top</button>
+    <!-- 
+    <div class="epsltop"  @click="scrollToTop">&#9650;</div>
+    <button class="epsltop" v-if="showBackToTop" @click="scrollToTop">Top</button>-->
+  </div>
+
+
+
+</body>
+</html>
+
+

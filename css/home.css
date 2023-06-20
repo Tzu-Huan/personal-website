@@ -1,0 +1,71 @@
+/* styles.css */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    height: 100vh; /* Make the container full-screen */
+    overflow: hidden; /* Hide any overflow from the photo */
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+.container img {
+    background: rgba(0, 0, 0, 0.8); 
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0.6em;
+    animation: floatInMove 2s ease-in-out;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 1px solid white; /* Set the border color */
+    font-size: 1.2em;
+    animation: floatInMove 2.8s ease-in-out;
+   
+}
+
+.btn:hover {
+    background-color: rgba(221, 221, 221, 0.8); /* Use rgba for transparency */
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+@keyframes floatInMove {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
