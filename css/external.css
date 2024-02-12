@@ -461,7 +461,7 @@ animation: floatInMove 6s ease-in-out;
   }
 
   .epsl-pdf-container iframe {
-    width: 100%;
+    width: 80%;
     height: 100%;
   }
 
