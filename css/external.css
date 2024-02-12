@@ -349,6 +349,8 @@ img {  /*shopee and epsl logo etc.*/
 .shopee-container {
 display: flex;
 justify-content: center;
+flex-direction: column;
+align-items: center;
 margin: 0 auto;
 margin-top: 40px;
 gap: 20px;
@@ -366,7 +368,7 @@ animation: floatInMove 4s ease-in-out;
   }
 
 .shopee-block {
-width: auto;
+width: 80%;
 height: auto;
 /*background-color: #ffc663;*/
 background-color: #025464;
@@ -375,8 +377,14 @@ border-radius: 5px;
 padding: 10px;
 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 position: relative;
-color: white
+color: white;
 
+}
+
+.shopee-block img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Ensures no extra space below the image */
 }
 
 .shopee-block p{
